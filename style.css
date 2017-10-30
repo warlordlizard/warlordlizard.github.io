@@ -16,6 +16,7 @@ header {
   width: 100%auto;
   text-align: center;
   font-size: 20px;
+  border-radius: 25px;
 }
 nav {
   display: inline-block;
