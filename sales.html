@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pat's Cookies</title>
+    <title>Pat's Cookie Shop</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -11,7 +11,7 @@
       <div>
         <img src="salmon.png" class="logoLeft">
         <img src="chinook.png" class="logoRight">
-        <h1>Pat's Cookies</h1>
+        <h1>Pat's Cookie Shop</h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -24,6 +24,31 @@
     </header>
     <main>
       <!-- <img class="hero" src="http://placehold.it/960x450"> -->
+      <form id="store_form">
+        <h2>Add a new store</h2>
+        <fieldset>
+          <label for="store"><span class="form">Store Name:</span></label>
+          <input type="text" name="store" placeholder="Enter Store Name..." value="" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="minCust"><span class="form">Minimum Customers per hour:</span></label>
+          <input type="number" name="minCust" value="" placeholder="Min cust/hr" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="maxCust"><span class="form">Maximum Customers per hour:</span></label>
+          <input type="number" name="maxCust" value="" placeholder="Max cust/hr" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="avgCookie"><span class="form">Average cookies per customer:</span></label>
+          <input type="number" name="avgCookie" value="" placeholder="Avg cookies/cust" required>
+        </fieldset>
+
+        <button id="submit_btn" type="submit">Add store</button>
+
+      </form>
       <ul class="sub-banners">
         <!-- <li><img src="http://placehold.it/300x375"></li>
         <li><img src="http://placehold.it/300x375"></li>
@@ -40,7 +65,7 @@
       <script rel="text/javascript" src="sales.js"></script>
     </main>
     <footer>
-      <article class="text">
+      <article>
         <h2>Contact Us:</h2>
         <p>Phone: (253) 123-4567</p>
         <p>email: patscookies@madeup.com</p>
